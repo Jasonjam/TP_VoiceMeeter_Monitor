@@ -1,0 +1,27 @@
+name: Release TPP
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build plugin
+        shell: pwsh
+        run: ./build.ps1
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        shell: pwsh
+        run: gh release create "$env:TAG" "dist/TP_VoiceMeeter_Monitor.tpp" --title "$env:TAG" --generate-notes

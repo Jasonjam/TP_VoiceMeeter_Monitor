@@ -3,11 +3,11 @@
     "version": 1,
     "name": "Voicemeeter Monitor",
     "id": "com.jasonjam.voicemeeter.monitor",
+    "plugin_start_cmd": "node %TP_PLUGIN_FOLDER%VoicemeeterMonitor/index.js",
     "configuration": {
         "colorDark": "#242424",
         "colorLight": "#e8e8e8",
-        "parentCategory": "audio",
-        "plugin_start_cmd": "node %TP_PLUGIN_FOLDER%index.js"
+        "parentCategory": "audio"
     },
     "categories": [
         {
@@ -91,6 +91,24 @@
                 {
                     "id": "vm_bus_4_gain",
                     "desc": "Voicemeeter Bus 4 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_5_gain",
+                    "desc": "Voicemeeter Bus 5 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_6_gain",
+                    "desc": "Voicemeeter Bus 6 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_7_gain",
+                    "desc": "Voicemeeter Bus 7 Gain (dB)",
                     "default": "0.0",
                     "type": "text"
                 }

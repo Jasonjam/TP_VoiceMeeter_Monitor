@@ -1,0 +1,100 @@
+{
+    "sdk": 6,
+    "version": 1,
+    "name": "Voicemeeter Monitor",
+    "id": "com.jasonjam.voicemeeter.monitor",
+    "configuration": {
+        "colorDark": "#242424",
+        "colorLight": "#e8e8e8",
+        "parentCategory": "audio",
+        "plugin_start_cmd": "node %TP_PLUGIN_FOLDER%index.js"
+    },
+    "categories": [
+        {
+            "id": "com.jasonjam.voicemeeter.monitor.main",
+            "name": "Voicemeeter Monitor",
+            "actions": [],
+            "events": [],
+            "states": [
+                {
+                    "id": "vm_strip_0_gain",
+                    "desc": "Voicemeeter Strip 0 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_strip_1_gain",
+                    "desc": "Voicemeeter Strip 1 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_strip_2_gain",
+                    "desc": "Voicemeeter Strip 2 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_strip_3_gain",
+                    "desc": "Voicemeeter Strip 3 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_strip_4_gain",
+                    "desc": "Voicemeeter Strip 4 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_strip_5_gain",
+                    "desc": "Voicemeeter Strip 5 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_strip_6_gain",
+                    "desc": "Voicemeeter Strip 6 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_strip_7_gain",
+                    "desc": "Voicemeeter Strip 7 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_0_gain",
+                    "desc": "Voicemeeter Bus 0 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_1_gain",
+                    "desc": "Voicemeeter Bus 1 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_2_gain",
+                    "desc": "Voicemeeter Bus 2 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_3_gain",
+                    "desc": "Voicemeeter Bus 3 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                },
+                {
+                    "id": "vm_bus_4_gain",
+                    "desc": "Voicemeeter Bus 4 Gain (dB)",
+                    "default": "0.0",
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}

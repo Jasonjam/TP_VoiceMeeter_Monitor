@@ -1,6 +1,8 @@
-# TP Plugin Voicemeeter Monitor
+# TouchPortal Plugin VMB
 
-Read-only Touch Portal states for Voicemeeter Gain.
+VMB stands for **Voicemeeter Banana**.
+
+A read-only Touch Portal plugin for displaying Voicemeeter Gain values.
 
 - Strip 0-7: `vm_strip_0_gain` through `vm_strip_7_gain`
 - Bus 0-4: `vm_bus_0_gain` through `vm_bus_4_gain`
